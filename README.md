@@ -1,80 +1,54 @@
 # Raw File Transfer
 
-A proof of concept for delivering a file between a client and server using sockets
+A proof of concept for delivering a file between two machines, one acting as a server machine and the other a client machine.
 
-## Getting Started
+### Features
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+The FileTransfer program allows a client to connect to a server and request a file from it, in which case the server 
+will deliver the file requested to the user. It also can accept a file from the user in which case it will receive 
+whatever file the user specified from the user.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+* Python 2.7+
+
+### Installing & Deployment
+
+Clone the repository and locate the client.py and server.py files
+
+Execute the server on one machine or on the same machine by running the command:
 
 ```
-Give examples
+python server.py
 ```
 
-### Installing
+By default the server will listen on port 7005 for incoming connections.
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+Execute the client on another machine, or the same machine and point it to the server IP address and port by running the command:
 
 ```
-Give the example
+python client.py <destination_addr> <destination_port> <COMMAND> <filename>
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Python](https://python.org) - The web framework used
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/ghTravis/RawFileTransfer/tags).
+
+* 1.0.0 - **Initial version** - Pushed to GitHub for public viewing
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Travis Ryder** - *Owner* - [TravisRyder.com](https://tavisryder.com)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/ghTravis/RawFileTransfer/graphs/contributors) who participated in this project.
 
 ## License
 
@@ -82,6 +56,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* BCIT BTech Program
