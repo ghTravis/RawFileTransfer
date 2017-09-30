@@ -32,7 +32,7 @@ python client.py <destination_addr> <destination_port> <COMMAND> <filename>
 
 ## Built With
 
-* [Python](https://python.org) - The web framework used
+* [Python](https://python.org) - The programming language used
 
 ## Contributing
 
